@@ -1,4 +1,4 @@
 Model
-=====
+=======
 
-Basic functionality of a model
+Model methods for the Eden PHP Library
