@@ -1,5 +1,5 @@
 {
-    "name": "eden-php/model",
+    "name": "eden/model",
     "type": "library",
     "description": "Eden generic model component",
     "keywords": ["eden", "library"],
