@@ -1,7 +1,7 @@
 {
     "name": "eden-php/model",
     "type": "library",
-    "description": "Model methods for Eden Core",
+    "description": "Eden generic model component",
     "keywords": ["eden", "library"],
     "homepage": "http://eden-php.com",
     "license": "MIT",
@@ -13,9 +13,10 @@
     ],
     "require": {
         "php": ">=5.3.1",
-		"eden-php/core": ">=1.0.0"
+		"eden-php/core": "1.*",
+		"eden-php/type": "1.*"
     },
     "autoload": {
-         "psr-0": { "Eden\\": "library/" }
+         "psr-0": { "Eden\\Model": "" }
     }
 }

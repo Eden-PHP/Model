@@ -7,7 +7,7 @@
  * distributed with this package.
  */
  
-class Eden_Tests_Model_ModelTest extends \PHPUnit_Framework_TestCase
+class Eden_Model_Tests_Model_ModelTest extends \PHPUnit_Framework_TestCase
 {
     public function testArrayAccess() 
     {
