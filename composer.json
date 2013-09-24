@@ -17,6 +17,6 @@
 		"eden/type": "1.*"
     },
     "autoload": {
-         "psr-0": { "Eden\\Model": "" }
+         "psr-0": { "Eden\\Model\\": "" }
     }
 }
