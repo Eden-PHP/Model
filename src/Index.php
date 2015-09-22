@@ -9,8 +9,6 @@
 
 namespace Eden\Model;
 
-use Eden\Type\ArrayType;
-
 
 /**
  * The base class for all classes wishing to integrate with Eden.
@@ -19,12 +17,11 @@ use Eden\Type\ArrayType;
  * loading patterns.
  *
  * @vendor Eden
- * @package Model
+ * @package model
  * @author Christian Blanquera cblanquera@openovate.com
  */
-class Base extends ArrayType
+class Index extends Base
 {
-
 	/**
 	 * We are disallowing the PHP default functions 
 	 * from being called
@@ -32,9 +29,8 @@ class Base extends ArrayType
 	 * @param string
 	 * @return false
 	 */
-    protected function getMethodType($name) 
+    protected function getMethod($name) 
     {
-        return false;
+        return $name;
     }
-
 }
