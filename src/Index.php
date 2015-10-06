@@ -9,7 +9,6 @@
 
 namespace Eden\Model;
 
-
 /**
  * The base class for all classes wishing to integrate with Eden.
  * Extending this class will allow your methods to seemlessly be
@@ -22,14 +21,14 @@ namespace Eden\Model;
  */
 class Index extends Base
 {
-	/**
-	 * We are disallowing the PHP default functions 
-	 * from being called
-	 * 
-	 * @param string
-	 * @return false
-	 */
-    protected function getMethod($name) 
+    /**
+     * We are disallowing the PHP default functions
+     * from being called
+     *
+     * @param string
+     * @return false
+     */
+    protected function getMethod($name)
     {
         return $name;
     }
