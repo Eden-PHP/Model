@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/Eden-PHP/Model.png)](https://travis-ci.org/Eden-PHP/Model)
+===
 # Model
 
 Manipulating array data in most cases can be expressed as a model. Models in *Eden* is defined loosely and as a utility class to help managing data in a controlled and chainable format. The basic setup of a model is described in `Figure 1`.
