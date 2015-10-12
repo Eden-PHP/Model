@@ -19,7 +19,58 @@
 <a name="intro"></a>
 ## Introduction
 
-TODO
+Manipulating array data in most cases can be expressed as a model. Models in *Eden* is defined loosely and as a utility class to help managing data in a controlled and chainable format. The basic setup of a model is described in `Figure 1`.
+
+**Figure 1. Setup**
+
+	$user = array(
+		'user_name' => 'Chris',
+		'user_email' => 'cblanquera@openovate.com',
+		'user_location' => 'Manila, Philippines');
+	
+	eden('model', $user);
+
+From here we can access properties in our model as a method, property or back as an array. `Figure 2` shows the ways to access data in action.
+
+**Figure 2. Accessing Model Properties**
+
+```
+//set user name
+$model->setUserName('Chris');            
+
+// returns user email
+$model->getUserEmail();                  
+
+// set any abstract key
+$model->setAnyThing('somthing');
+
+// get any abstract key
+$model->getAnyThing();              	
+ 
+//access as array
+echo $model['user_name'];
+
+//set as array
+$model['user_email'] = 'my@email.com';
+
+//access as object
+echo $model->user_name;  
+
+//set as object
+$model->user_name = 'my@email.com';    
+```
+
+We added several common methods to futher manipulate model data.
+
+**Figure 3. Utility Methods**
+
+```
+//for each row, copy the value of post_user to the user_id column
+$model->copy('post_user', 'user_id');
+
+//returns a raw array (no object)
+$model->get();  
+```
 
 ====
 
