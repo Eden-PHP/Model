@@ -15,9 +15,10 @@ namespace Eden\Model;
  * overloaded and overrided as well as provide some basic class
  * loading patterns.
  *
- * @vendor Eden
- * @package model
- * @author Christian Blanquera cblanquera@openovate.com
+ * @vendor   Eden
+ * @package  model
+ * @author   Christian Blanquera <cblanquera@openovate.com>
+ * @standard PSR-2
  */
 class Index extends Base
 {
@@ -26,6 +27,7 @@ class Index extends Base
      * from being called
      *
      * @param string
+     *
      * @return false
      */
     protected function getMethod($name)
