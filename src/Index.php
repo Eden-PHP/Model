@@ -1,22 +1,19 @@
 <?php //-->
-/*
- * This file is part of the Model package of the Eden PHP Library.
- * (c) 2013-2014 Openovate Labs
+/**
+ * This file is part of the Eden PHP Library.
+ * (c) 2014-2016 Openovate Labs
  *
- * Copyright and license information can be found at LICENSE
+ * Copyright and license information can be found at LICENSE.txt
  * distributed with this package.
  */
 
 namespace Eden\Model;
 
 /**
- * The base class for all classes wishing to integrate with Eden.
- * Extending this class will allow your methods to seemlessly be
- * overloaded and overrided as well as provide some basic class
- * loading patterns.
+ * Model class implementation
  *
  * @vendor   Eden
- * @package  model
+ * @package  Model
  * @author   Christian Blanquera <cblanquera@openovate.com>
  * @standard PSR-2
  */
@@ -26,9 +23,9 @@ class Index extends Base
      * We are disallowing the PHP default functions
      * from being called
      *
-     * @param string
+     * @param string $name the name of the method
      *
-     * @return false
+     * @return string
      */
     protected function getMethod($name)
     {
